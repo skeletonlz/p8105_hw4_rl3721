@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Rachel Liu</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">About</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/skeletonlz">GitHub</a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/ruizhe-liu/">LinkedIn</a>
+</li>
+<li>
+  <a href="mailto:rachelliucqt@gmail.com">Email</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#rachel-ruizhe-liu" id="toc-rachel-ruizhe-liu">Rachel
+(Ruizhe) Liu</a>
+<ul>
+<li><a href="#education" id="toc-education">Education</a>
+<ul>
+<li><a href="#columbia-university" id="toc-columbia-university">Columbia
+University</a></li>
+<li><a href="#new-york-university" id="toc-new-york-university">New York
+University</a></li>
+</ul></li>
+<li><a href="#professional-experience"
+id="toc-professional-experience">Professional Experience</a>
+<ul>
+<li><a href="#clinpathfinder"
+id="toc-clinpathfinder">ClinPathFinder</a></li>
+<li><a href="#georgia-cancer-center"
+id="toc-georgia-cancer-center">Georgia Cancer Center</a></li>
+<li><a href="#adaseco" id="toc-adaseco">AdasEco</a></li>
+</ul></li>
+<li><a href="#research-and-projects"
+id="toc-research-and-projects">Research and Projects</a>
+<ul>
+<li><a href="#medical-imaging-and-colorectal-polyp-detection"
+id="toc-medical-imaging-and-colorectal-polyp-detection">Medical Imaging
+and Colorectal Polyp Detection</a></li>
+<li><a href="#statistical-shape-modeling-of-the-subtalar-joint"
+id="toc-statistical-shape-modeling-of-the-subtalar-joint">Statistical
+Shape Modeling of the Subtalar Joint</a></li>
+<li><a href="#ai-based-ecg-signal-classification"
+id="toc-ai-based-ecg-signal-classification">AI-Based ECG Signal
+Classification</a></li>
+<li><a href="#clinical-data-mapping-with-cdisc-standards"
+id="toc-clinical-data-mapping-with-cdisc-standards">Clinical Data
+Mapping with CDISC Standards</a></li>
+</ul></li>
+<li><a href="#technical-skills" id="toc-technical-skills">Technical
+Skills</a></li>
+<li><a href="#publications-and-conference-papers"
+id="toc-publications-and-conference-papers">Publications and Conference
+Papers</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="rachel-ruizhe-liu" class="section level1">
+<h1>Rachel (Ruizhe) Liu</h1>
+<p>MS Student in Biostatistics<br />
+Columbia University, Mailman School of Public Health</p>
+<p><a href="mailto:rachelliucqt@gmail.com">Email</a> | <a
+href="https://github.com/skeletonlz">GitHub</a> | <a
+href="https://www.linkedin.com/in/ruizhe-liu/">LinkedIn</a></p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<div id="columbia-university" class="section level3">
+<h3>Columbia University</h3>
+<p><strong>Master of Science in Biostatistics</strong><br />
+Mailman School of Public Health<br />
+September 2026 – Expected May 2028</p>
+</div>
+<div id="new-york-university" class="section level3">
+<h3>New York University</h3>
+<p><strong>Bachelor of Science in Chemical and Biomolecular
+Engineering</strong><br />
+August 2022 – May 2026</p>
+<p>Honors: Dean’s List</p>
+<hr />
+</div>
+</div>
+<div id="professional-experience" class="section level2">
+<h2>Professional Experience</h2>
+<div id="clinpathfinder" class="section level3">
+<h3>ClinPathFinder</h3>
+<p><strong>Healthcare Data Analyst Intern | June – August
+2026</strong></p>
+<ul>
+<li>Developed a healthcare data analytics pipeline using information
+from more than 400 breast cancer clinical trials on
+ClinicalTrials.gov.</li>
+<li>Used natural language processing and AI-assisted summarization to
+organize unstructured clinical trial descriptions.</li>
+<li>Integrated FDA drug information and ATC classifications to support
+clinical development and drug landscape analysis.</li>
+<li>Created dashboards to explore trial trends, sponsors, therapeutic
+approaches, and clinical endpoints.</li>
+</ul>
+</div>
+<div id="georgia-cancer-center" class="section level3">
+<h3>Georgia Cancer Center</h3>
+<p><strong>Research Intern | July – August 2025</strong></p>
+<ul>
+<li>Worked with glioblastoma cell cultures and studied treatment
+responses involving oncolytic HSV and the BTK inhibitor ibrutinib.</li>
+<li>Performed immunostaining and Western blotting to examine tumor and
+immune-related markers.</li>
+<li>Analyzed experimental imaging data using ImageJ and Photoshop.</li>
+<li>Gained experience with laboratory workflows related to cancer
+immunotherapy.</li>
+</ul>
+</div>
+<div id="adaseco" class="section level3">
+<h3>AdasEco</h3>
+<p><strong>Data Analyst Intern | June – August 2024</strong></p>
+<ul>
+<li>Used Python for data analysis and regression modeling in smart
+mobility research.</li>
+<li>Prepared and cleaned datasets for model testing and evaluation.</li>
+<li>Participated in technical discussions and presentations related to
+autonomous driving and detection technologies.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="research-and-projects" class="section level2">
+<h2>Research and Projects</h2>
+<div id="medical-imaging-and-colorectal-polyp-detection"
+class="section level3">
+<h3>Medical Imaging and Colorectal Polyp Detection</h3>
+<p><strong>Independent Research | October – November 2025</strong></p>
+<ul>
+<li>Developed a preprocessing and annotation workflow for colorectal
+endoscopy images.</li>
+<li>Worked with YOLOv8, deformable convolutions (DCN), and convolutional
+block attention modules (CBAM).</li>
+<li>Used data augmentation and Weighted Box Fusion to improve
+small-object detection.</li>
+<li>Built an end-to-end workflow for automated polyp detection.</li>
+</ul>
+</div>
+<div id="statistical-shape-modeling-of-the-subtalar-joint"
+class="section level3">
+<h3>Statistical Shape Modeling of the Subtalar Joint</h3>
+<p><strong>Independent Research | February – July 2025</strong></p>
+<ul>
+<li>Studied anatomical differences using CT and weight-bearing CT
+images.</li>
+<li>Built single-domain and multi-domain statistical shape models of the
+subtalar joint.</li>
+<li>Used Mimics, 3-matic, and MATLAB for image processing, 3D
+reconstruction, and PCA-based shape analysis.</li>
+<li>Compared anatomical shapes under weight-bearing and
+non-weight-bearing conditions.</li>
+</ul>
+</div>
+<div id="ai-based-ecg-signal-classification" class="section level3">
+<h3>AI-Based ECG Signal Classification</h3>
+<p><strong>Independent Research | February – May 2026</strong></p>
+<ul>
+<li>Developed a Python workflow for ECG signal processing and feature
+engineering using synthetic biomedical datasets.</li>
+<li>Applied Logistic Regression, Random Forest, and K-Nearest Neighbors
+for classification.</li>
+<li>Evaluated results using confusion matrices and feature
+importance.</li>
+</ul>
+</div>
+<div id="clinical-data-mapping-with-cdisc-standards"
+class="section level3">
+<h3>Clinical Data Mapping with CDISC Standards</h3>
+<p><strong>Independent Project | September – October 2023</strong></p>
+<ul>
+<li>Mapped raw clinical datasets into CDISC SDTM domains.</li>
+<li>Created ADaM datasets using SAS for statistical analysis.</li>
+<li>Performed data quality checks to identify mapping and derivation
+inconsistencies.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="technical-skills" class="section level2">
+<h2>Technical Skills</h2>
+<p><strong>Programming and Statistics</strong></p>
+<ul>
+<li>R, Python, SAS, MATLAB</li>
+<li>Data cleaning, regression, statistical analysis, and
+visualization</li>
+</ul>
+<p><strong>Machine Learning</strong></p>
+<ul>
+<li>Logistic Regression, Random Forest, KNN</li>
+<li>YOLOv8, DCN, CBAM, Weighted Box Fusion</li>
+</ul>
+<p><strong>Clinical and Biomedical Data</strong></p>
+<ul>
+<li>Clinical trial data analysis</li>
+<li>CDISC SDTM and ADaM</li>
+<li>Biomedical image processing and 3D shape modeling</li>
+</ul>
+<p><strong>Research and Laboratory</strong></p>
+<ul>
+<li>Cell culture, immunostaining, Western blotting, PCR</li>
+<li>ImageJ, Mimics, 3-matic, ShapeWorks</li>
+</ul>
+<hr />
+</div>
+<div id="publications-and-conference-papers" class="section level2">
+<h2>Publications and Conference Papers</h2>
+<p><strong>Semantic Segmentation and Object Detection for 3D Motion
+Analysis of the Ankle Joint in High-Resolution MRI</strong></p>
+<p>Accepted at the 7th International Conference on Computing and Data
+Science, 2025.</p>
+<p><strong>Three-Dimensional Shape Analysis of Chinese Calcaneus and
+Talus Based on Statistical Shape Model</strong></p>
+<p>Accepted at the 2025 Shanghai International Conference on Sports
+Biomechanics and Clinical Translation.</p>
+<p><strong>Research on Multi-algorithm Fusion Technology for Colorectal
+Polyp Detection: A Deep Learning Perspective</strong></p>
+<p>Accepted at the 2025 IEEE 3rd International Conference on Electrical,
+Automation and Computer Engineering.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

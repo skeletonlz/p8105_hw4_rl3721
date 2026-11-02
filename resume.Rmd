@@ -1,0 +1,127 @@
+
+---
+title: "Resume"
+output: html_document
+---
+
+# Rachel (Ruizhe) Liu
+
+MS Student in Biostatistics  
+Columbia University, Mailman School of Public Health
+
+[Email](mailto:rachelliucqt@gmail.com) | [GitHub](https://github.com/skeletonlz) | [LinkedIn](https://www.linkedin.com/in/ruizhe-liu/)
+
+## Education
+
+### Columbia University
+**Master of Science in Biostatistics**  
+Mailman School of Public Health  
+September 2026 – Expected May 2028
+
+### New York University
+**Bachelor of Science in Chemical and Biomolecular Engineering**  
+August 2022 – May 2026
+
+Honors: Dean's List
+
+---
+
+## Professional Experience
+
+### ClinPathFinder
+**Healthcare Data Analyst Intern | June – August 2026**
+
+- Developed a healthcare data analytics pipeline using information from more than 400 breast cancer clinical trials on ClinicalTrials.gov.
+- Used natural language processing and AI-assisted summarization to organize unstructured clinical trial descriptions.
+- Integrated FDA drug information and ATC classifications to support clinical development and drug landscape analysis.
+- Created dashboards to explore trial trends, sponsors, therapeutic approaches, and clinical endpoints.
+
+### Georgia Cancer Center
+**Research Intern | July – August 2025**
+
+- Worked with glioblastoma cell cultures and studied treatment responses involving oncolytic HSV and the BTK inhibitor ibrutinib.
+- Performed immunostaining and Western blotting to examine tumor and immune-related markers.
+- Analyzed experimental imaging data using ImageJ and Photoshop.
+- Gained experience with laboratory workflows related to cancer immunotherapy.
+
+### AdasEco
+**Data Analyst Intern | June – August 2024**
+
+- Used Python for data analysis and regression modeling in smart mobility research.
+- Prepared and cleaned datasets for model testing and evaluation.
+- Participated in technical discussions and presentations related to autonomous driving and detection technologies.
+
+---
+
+## Research and Projects
+
+### Medical Imaging and Colorectal Polyp Detection
+**Independent Research | October – November 2025**
+
+- Developed a preprocessing and annotation workflow for colorectal endoscopy images.
+- Worked with YOLOv8, deformable convolutions (DCN), and convolutional block attention modules (CBAM).
+- Used data augmentation and Weighted Box Fusion to improve small-object detection.
+- Built an end-to-end workflow for automated polyp detection.
+
+### Statistical Shape Modeling of the Subtalar Joint
+**Independent Research | February – July 2025**
+
+- Studied anatomical differences using CT and weight-bearing CT images.
+- Built single-domain and multi-domain statistical shape models of the subtalar joint.
+- Used Mimics, 3-matic, and MATLAB for image processing, 3D reconstruction, and PCA-based shape analysis.
+- Compared anatomical shapes under weight-bearing and non-weight-bearing conditions.
+
+### AI-Based ECG Signal Classification
+**Independent Research | February – May 2026**
+
+- Developed a Python workflow for ECG signal processing and feature engineering using synthetic biomedical datasets.
+- Applied Logistic Regression, Random Forest, and K-Nearest Neighbors for classification.
+- Evaluated results using confusion matrices and feature importance.
+
+### Clinical Data Mapping with CDISC Standards
+**Independent Project | September – October 2023**
+
+- Mapped raw clinical datasets into CDISC SDTM domains.
+- Created ADaM datasets using SAS for statistical analysis.
+- Performed data quality checks to identify mapping and derivation inconsistencies.
+
+---
+
+## Technical Skills
+
+**Programming and Statistics**
+
+- R, Python, SAS, MATLAB
+- Data cleaning, regression, statistical analysis, and visualization
+
+**Machine Learning**
+
+- Logistic Regression, Random Forest, KNN
+- YOLOv8, DCN, CBAM, Weighted Box Fusion
+
+**Clinical and Biomedical Data**
+
+- Clinical trial data analysis
+- CDISC SDTM and ADaM
+- Biomedical image processing and 3D shape modeling
+
+**Research and Laboratory**
+
+- Cell culture, immunostaining, Western blotting, PCR
+- ImageJ, Mimics, 3-matic, ShapeWorks
+
+---
+
+## Publications and Conference Papers
+
+**Semantic Segmentation and Object Detection for 3D Motion Analysis of the Ankle Joint in High-Resolution MRI**
+
+Accepted at the 7th International Conference on Computing and Data Science, 2025.
+
+**Three-Dimensional Shape Analysis of Chinese Calcaneus and Talus Based on Statistical Shape Model**
+
+Accepted at the 2025 Shanghai International Conference on Sports Biomechanics and Clinical Translation.
+
+**Research on Multi-algorithm Fusion Technology for Colorectal Polyp Detection: A Deep Learning Perspective**
+
+Accepted at the 2025 IEEE 3rd International Conference on Electrical, Automation and Computer Engineering.

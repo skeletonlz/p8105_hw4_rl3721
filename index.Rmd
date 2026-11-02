@@ -1,0 +1,46 @@
+
+---
+title: "About Me"
+output: html_document
+---
+
+# Hi, I'm Rachel!
+
+I'm Rachel (Ruizhe) Liu, currently pursuing an MS in Biostatistics at Columbia University's Mailman School of Public Health. I graduated from New York University in 2026 with a BS in Chemical and Biomolecular Engineering.
+
+My academic and research experience has been a mix of engineering, statistics, and biomedical science. I've worked on healthcare data analytics, clinical trial data processing, medical imaging, and cancer research.
+
+I'm particularly interested in how statistical methods and computational tools can help answer real questions in medicine, from understanding clinical trial data to improving biomedical imaging analysis.
+
+## Education
+
+**Columbia University**  
+MS in Biostatistics, Mailman School of Public Health  
+2026 – Expected 2028
+
+**New York University**  
+BS in Chemical and Biomolecular Engineering  
+2022 – 2026
+
+## What I'm Interested In
+
+- Biostatistics and clinical trial analysis
+- Healthcare data analytics and digital health
+- Machine learning in biomedical research
+- Medical imaging and statistical shape modeling
+- Clinical data management and real-world evidence
+
+## A Little About My Experience
+
+Most recently, I worked as a Healthcare Data Analyst Intern at ClinPathFinder, where I analyzed clinical trial data and developed tools to organize biomedical information.
+
+I also have experience in cancer research at Georgia Cancer Center and medical imaging research involving statistical shape modeling and machine learning.
+
+You can find more details about my projects and experience on the Resume page.
+
+## Get in Touch
+
+- **Email:** [rachelliucqt@gmail.com](mailto:rachelliucqt@gmail.com)
+- **GitHub:** [skeletonlz](https://github.com/skeletonlz)
+- **LinkedIn:** [Rachel (Ruizhe) Liu](https://www.linkedin.com/in/ruizhe-liu/)
+

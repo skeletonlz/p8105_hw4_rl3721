@@ -1,0 +1,20 @@
+name: "Rachel Liu"
+output_dir: "."
+navbar:
+  title: "Rachel Liu"
+  left:
+    - text: "About"
+      href: index.html
+    - text: "Resume"
+      href: resume.html
+  right:
+    - text: "GitHub"
+      href: https://github.com/skeletonlz
+    - text: "LinkedIn"
+      href: https://www.linkedin.com/in/ruizhe-liu/
+    - text: "Email"
+      href: mailto:rachelliucqt@gmail.com
+output:
+  html_document:
+    theme: cosmo
+    toc: true
