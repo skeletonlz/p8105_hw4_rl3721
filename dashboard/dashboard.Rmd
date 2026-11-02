@@ -1,0 +1,131 @@
+---
+title: "New York Weather Dashboard"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("ny_noaa", package = "p8105.datasets")
+
+# Use ten years to keep the dashboard manageable
+weather = ny_noaa |>
+  filter(
+    date >= as.Date("2010-01-01"),
+    date < as.Date("2020-01-01")
+  ) |>
+  mutate(
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10,
+    prcp = prcp / 10
+  )
+
+# Average observations across reporting weather stations
+daily_weather = weather |>
+  group_by(date) |>
+  summarise(
+    max_temp = if (all(is.na(tmax))) NA_real_ else mean(tmax, na.rm = TRUE),
+    min_temp = if (all(is.na(tmin))) NA_real_ else mean(tmin, na.rm = TRUE),
+    precipitation = if (all(is.na(prcp))) NA_real_ else mean(prcp, na.rm = TRUE),
+    .groups = "drop"
+  ) |>
+  mutate(
+    month = lubridate::month(date, label = TRUE),
+    year_month = as.Date(format(date, "%Y-%m-01"))
+  )
+
+monthly_weather = daily_weather |>
+  group_by(year_month) |>
+  summarise(
+    avg_max_temp = mean(max_temp, na.rm = TRUE),
+    .groups = "drop"
+  )
+```
+
+Row
+-------------------------------------
+
+### Monthly Temperature Trend in 2010
+
+```{r}
+p1 = monthly_weather |>
+  ggplot(aes(
+    x = year_month,
+    y = avg_max_temp
+  )) +
+  geom_line(color = "#3275a8", linewidth = 0.7) +
+  labs(
+    x = "Date",
+    y = "Average maximum temperature (°C)"
+  ) +
+  theme_minimal()
+
+ggplotly(p1)
+```
+
+Row
+-------------------------------------
+
+### Temperature Distribution by Month
+
+```{r}
+p2 = daily_weather |>
+  filter(!is.na(max_temp)) |>
+  ggplot(aes(
+    x = month,
+    y = max_temp
+  )) +
+  geom_boxplot(fill = "#a9c9df", color = "#376080") +
+  labs(
+    x = "Month",
+    y = "Average daily maximum temperature (°C)"
+  ) +
+  theme_minimal()
+
+ggplotly(p2)
+```
+
+Row
+-------------------------------------
+
+### Average Daily Precipitation by Month
+
+```{r}
+precip_monthly = daily_weather |>
+  filter(!is.na(precipitation)) |>
+  group_by(month) |>
+  summarise(
+    avg_precipitation = mean(precipitation),
+    .groups = "drop"
+  )
+
+p3 = ggplot(
+  precip_monthly,
+  aes(x = month, y = avg_precipitation)
+) +
+  geom_col(fill = "#4c91b5") +
+  labs(
+    x = "Month",
+    y = "Average daily precipitation (mm)"
+  ) +
+  theme_minimal()
+
+ggplotly(p3)
+```
+
+Row
+-------------------------------------
+
+### About the Data
+
+This dashboard uses New York weather observations from 2010 in the `ny_noaa` dataset from the `p8105.datasets` package.
+
+The temperature plots show a clear seasonal pattern, with the highest temperatures in July and the lowest in winter. The boxplots also show how daily temperatures vary within each month. Precipitation is less consistent across the year, with October having the highest average daily precipitation in this dataset.
+
+Temperature and precipitation were converted to degrees Celsius and millimeters. The daily values are averages across reporting stations, rather than measurements from a single location.
